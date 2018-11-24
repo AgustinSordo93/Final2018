@@ -2,10 +2,12 @@ package com.project.serviceImpl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.project.entity.Contacto;
 import com.project.repository.ContactoRepository;
 import com.project.services.ContactoService;
-
+@Service
 public class ContactoServiceImpl implements ContactoService {
 	
 	private ContactoRepository contactoRepository;

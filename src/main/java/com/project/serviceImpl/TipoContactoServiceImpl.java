@@ -3,11 +3,12 @@ package com.project.serviceImpl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.project.entity.TipoContacto;
 import com.project.repository.TipoContactoRepository;
 import com.project.services.TipoContactoService;
-
+@Service
 public class TipoContactoServiceImpl implements TipoContactoService{
 	
 	@Autowired

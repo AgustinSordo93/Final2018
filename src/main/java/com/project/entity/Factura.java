@@ -31,7 +31,7 @@ public class Factura {
 	private Cliente cliente;
 	
 	@JsonManagedReference
-	@OneToMany(mappedBy ="detalleFactura", orphanRemoval = true, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@OneToMany(mappedBy ="factura", orphanRemoval = true, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private List<DetalleFactura> detalleFactura;
 	
 	public Cliente getCliente() {

@@ -3,11 +3,12 @@ package com.project.serviceImpl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.project.entity.Factura;
 import com.project.services.FacturaService;
 import com.project.repository.FacturaRepository;
-
+@Service
 public class FacturaServiceImpl implements FacturaService {
 	@Autowired
 	public FacturaRepository facturaRepository;
