@@ -40,16 +40,4 @@ public class FacturaServiceImpl implements FacturaService {
 	
 		return factura;
 	}
-
-	@Override
-	public Factura findByLetraAndSucursalAndNumero(String letra, Integer sucursal, Integer numero) {
-		Factura factura = this.findByLetraAndSucursalAndNumero(letra, sucursal, numero);
-		if(factura !=null) {
-			this.findByLetraAndSucursalAndNumero(letra, sucursal, numero);
-		}
-		
-		return factura;
-	}
-	
-
 }
